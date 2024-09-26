@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main{
+        color: #ff0;
+        background: #000; 
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+    #move{
+        position: relative;
+        }
+    </style>
+</head>
+<body style="background-color:black;">
+    
+    <script>
+        function runaway(id) {
+            id.style.top = Math.round(Math.random() * 250) - 100 + 'px';
+            id.style.left = Math.round(Math.random() * 250) - 200 + 'px';
+        }
+    </script>
+    <div class = "main">
+        <p>Myslíš si, že záleží na tvé existenci ?</p>
+        <form><button type="submit" formaction="index.html">ne</button></form>
+            <button id="move" onmouseover="runaway(this)">ano</button>
+    </div>
+</body>
+</html>
