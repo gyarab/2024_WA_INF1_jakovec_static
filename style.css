@@ -1,0 +1,26 @@
+body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1671580396905-47079cb6f30d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB3YXZlc3xlbnwwfHwwfHx8MA%3D%3D");
+}h1, h2, h3 {
+    color: black;
+    background-color: white;
+    opacity: 2;
+    font-size: large;
+    line-height: normal;
+    margin-top: 1%;
+    outline: 20px;
+    padding: 5px;
+}
+p, h1, h2, h3 {
+    text-align: left;
+}
+h2, h3 {
+    font-size:medium;
+    text-transform:initial;
+}
+li[title="odkaz"]:hover {
+    text-decoration:double;
+    background-color: rgba(255, 255, 0, 0.666);
+}li[title="freaky-odkaz"]:hover {
+    text-decoration:double;
+    background-color: rgba(255, 0, 0, 0.666);
+}
