@@ -14,13 +14,12 @@
             background-color: black;
             border: 2px solid red;
         }
-        p { color: red; font-size: 100px; font-family: 'Freaky Family';}
+        #f { color: red; font-size: 100px; font-family: 'Freaky Family';}
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
     <img src="freakylogo_big.png" alt="logo">
-    <img src="vj.jpg" style="float: right;" alt="ja">
     <h1>na této stránce je <b>zapovězeno</b> :</h1>
     <h2>opravdu</h2>
 
@@ -32,6 +31,7 @@
         <li>zelená a tuzemský rum</li>
         <li>a připojení mac userům</li>
         <li>taky ještě návštěva předposledního videa na seznamu</li>
+        <li><a href="#update">zde je domácí úkol</a></li>
     </ol>   
     
     <h2>katalog oblíbených videjí ❤️ </h2>
@@ -45,12 +45,33 @@
 
     <header>
         
-        <p>hello bro ❤️
+        <p id = "f">lorem ipsum
+        <p id = "f">dolor sit amet
+        <p id = "f">sed convallis ❤️
         
-        <div>
-            https://css-tricks.com/newsletter/207-psychedelic-css-eleventy-and-a-quick-guide-to-emotion/
-        </div>
     </header>
+    
+    <h2 id="update">
+        Domácí úkol 4.10.
+    </h2>
+    <div class="flex-container">
+        <div class="flex-item"><h3>Skibidi</h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+        <div class="flex-item"><img src="orange-justice.gif" alt="ojdance"class="scaled-image"></div>
+        <div class="flex-item"id = "epilepsy">namiř na mě!!!</div>
+        <div class="flex-item"><ol><li title="wa">wa</li><li title="pg">pg</li></div>
+        <div class="flex-item"id = "hover">namiř i na mě 👌 <p style="color: #f0f0f1;">BAF!!!</p></div>
+    </div>
+    <p> Omlouvám se, že je stránka odfláklá. Úkol jsem ale doufám splnil a stránku se pokusím vylepšit aspoň do hodiny ve čtvrtek.
+
+    <script>
+        document.getElementById('epilepsy').addEventListener('mouseover', function() {
+            this.classList.add('hovering');
+        });
+        
+        document.getElementById('epilepsy').addEventListener('mouseout', function() {
+            this.classList.remove('hovering');
+        });
+    </script>
 
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
     outline: 20px;
     padding: 5px;
 }
-p, h1, h2, h3 {
+#f, h1, h2, h3 {
     text-align: left;
 }
 h2, h3 {
@@ -23,4 +23,80 @@ li[title="odkaz"]:hover {
 }li[title="freaky-odkaz"]:hover {
     text-decoration:double;
     background-color: rgba(255, 0, 0, 0.666);
+}
+
+
+.scaled-image {
+    max-width: 30%; 
+    align-self: center;    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+}
+#hover:hover {
+    background-color:black;
+}
+
+@keyframes flash {
+    0% { background-color: red; }
+    25% { background-color: yellow; }
+    50% { background-color: green; }
+    75% { background-color: blue; }
+    100% { background-color: purple; }
+}
+
+#epilepsy {
+    transition: background-color 0.5s;
+}
+
+#epilepsy.hovering {
+    animation: flash 0.5s infinite;
+}
+
+.flex-item {
+    background-color: #f0f0f1;
+    padding: 100px;
+    border-right: 1px solid #000000;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item:last-child {
+    border-right: none;
+}
+@media (max-width: 1024px) {
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .flex-item {
+        flex: 1 1 45%;
+        margin: 10px;
+        border-right: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        border-right: none;
+    }
+    
+    .flex-item img {
+        max-width: 90%;
+    }
 }
