@@ -1,2 +1,2 @@
 # README
-Repozitář Viktora Jakovce, s prototypovou stránkou, používanou k domácím úkolům.
+Repozitář Viktora Jakovce s prototypovou stránkou používanou k domácím úkolům.
