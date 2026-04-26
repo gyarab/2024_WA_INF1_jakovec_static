@@ -1,0 +1,2 @@
+# mp26
+![alt text](https://ctfs.ceskatelevize.cz/img/r2q38ASUahi0PFVqAdleII2DpNUz9PI-VqdeHTQiUbI/rs:fit:1280:1088/plain/s3/porady-s3/648945311964b021e30e83d3/heroMobile/vinnetou-rudy-gentleman-1688999031738.jpg)

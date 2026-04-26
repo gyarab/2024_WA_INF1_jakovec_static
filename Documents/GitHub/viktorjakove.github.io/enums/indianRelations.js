@@ -1,0 +1,1 @@
+export const VAGONS_PER_PEEPS = [1,5,10,15,25,9999999];

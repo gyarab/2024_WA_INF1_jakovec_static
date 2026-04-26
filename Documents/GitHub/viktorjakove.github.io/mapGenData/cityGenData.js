@@ -1,0 +1,256 @@
+export const CITY_GEN_DATA=[
+    {
+        name: "Steamport",
+        peepsMin: 10,
+        peepsMax: 30,
+        sizeX: 2,
+        sizeY: 2,
+        building: "none",
+        defenseLevel: 1,
+        cathouseLevel: 0,
+        description: "Domov úžasného myslitele. (tebe!)"
+    },
+    {
+        name: "Dry Gulch",
+        peepsMin: 10,
+        peepsMax: 10,
+        sizeX: 2,
+        sizeY: 1,
+        building: "none", // temp -> none
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Jak již název napovídá..."
+    },
+    {
+        name: "Red Rock",
+        peepsMin: 20,
+        peepsMax: 25,
+        sizeX: 2,
+        sizeY: 3,
+        building: "sheriff",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Coppers copt Ken’s cash??"
+    },
+    {
+        name: "Pennyville",
+        peepsMin: 45,
+        peepsMax: 55,
+        sizeX: 5,
+        sizeY: 5,
+        building: "bank",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Město vedené zdatným obchodníkem!"
+    },
+    {
+        name: "The Gravetary",
+        peepsMin: 1,
+        peepsMax: 1,
+        sizeX: 1,
+        sizeY: 1,
+        building: "graveyard",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "hm..."
+    },
+    /*---------- */
+    {
+        name: "Deadman’s Draw",
+        peepsMin: 9,
+        peepsMax: 17,
+        sizeX: 3,
+        sizeY: 1,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Ve vzduchu prázdnota."
+    },
+    {
+        name: "Anschussburg",
+        peepsMin: 5,
+        peepsMax: 10,
+        sizeX: 2,
+        sizeY: 1,
+        building: "olda",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Odpadlíkův úkryt..."
+    },
+    {
+        name: "Snapschad",
+        peepsMin: 50,
+        peepsMax: 70,
+        sizeX: 3,
+        sizeY: 4,
+        building: "gallery",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Domov umělců?? koberec??"
+    },
+    {
+        name: "Ramon’s Rest",
+        peepsMin: 20,
+        peepsMax: 30,
+        sizeX: 3,
+        sizeY: 2,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Bydliště Gabby... Hej!"
+    },
+    {
+        name: "Coco Mall",
+        peepsMin: 150,
+        peepsMax: 200,
+        sizeX: 10,
+        sizeY: 10,
+        building: "shop",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Město obchodu."
+    },
+    {
+        name: "Boom-Mussel Bay",
+        peepsMin: 25,
+        peepsMax: 70,
+        sizeX: 3,
+        sizeY: 2,
+        building: "barber",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Bárbr."
+    },
+    {
+        name: "Cul's Cordonnier",
+        peepsMin: 25,
+        peepsMax: 70,
+        sizeX: 2,
+        sizeY: 3,
+        building: "marco",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Zde sídlí švec. Říká si Marek."
+    },
+    {
+        name: "Techsas",
+        peepsMin: 10,
+        peepsMax: 25,
+        sizeX: 8,
+        sizeY: 9,
+        building: "mech",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Dílna kolejáře."
+    },
+    {
+        name: "Over the R",
+        peepsMin: 50,
+        peepsMax: 100,
+        sizeX: 1,
+        sizeY: 1,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Nejlepší hospoda s nejlepším pivem."
+    },
+    {
+        name: "Positive hills",
+        peepsMin: 150,
+        peepsMax: 200,
+        sizeX: 6,
+        sizeY: 7,
+        building: "bussiness",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Město strojů a techniky."
+    },
+    {
+        name: "Holy Cross",
+        peepsMin: 150,
+        peepsMax: 400,
+        sizeX: 4,
+        sizeY: 5,
+        building: "church",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Sanktplatz."
+    },
+    {
+        name: "Wash Him Tom DC",
+        peepsMin: 150,
+        peepsMax: 400,
+        sizeX: 3,
+        sizeY: 3,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Lázně.(Otevře se mimo demo.)"
+    },
+    {
+        name: "Rasta-Pasta",
+        peepsMin: 150,
+        peepsMax: 400,
+        sizeX: 5,
+        sizeY: 6,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Město kouře.(Otevře se mimo demo.)"
+    },
+    {
+        name: "Sub-burps",
+        peepsMin: 150,
+        peepsMax: 400,
+        sizeX: 5,
+        sizeY: 4,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Domov nejlepší jídelny. Velké spoje na Rasta-Pasta.(Otevře se mimo demo.)"
+    },
+    {
+        name: "Mibombo",
+        peepsMin: 150,
+        peepsMax: 400,
+        sizeX: 9,
+        sizeY: 2,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Závodnická dráha.(Otevře se mimo demo.)"
+    },
+    {
+        name: "Condor's Nest",
+        peepsMin: 1,
+        peepsMax: 1,
+        sizeX: 1,
+        sizeY: 1,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Pokladnice.(Otevře se mimo demo.)"
+    },
+    {
+        name: "Dirty Hollow",
+        peepsMin: 1,
+        peepsMax: 1,
+        sizeX: 2,
+        sizeY: 1,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Pokladnice.(Otevře se mimo demo.)"
+    },
+    {
+        name: "Ermineland",
+        peepsMin: 150,
+        peepsMax: 400,
+        sizeX: 5,
+        sizeY: 3,
+        building: "none",
+        defenseLevel: 5,
+        cathouseLevel: 0,
+        description: "Domov pistolnice Ermíny.(Otevře se mimo demo.)"
+    },
+]

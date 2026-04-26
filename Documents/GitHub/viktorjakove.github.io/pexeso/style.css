@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #bdbdbd, #b1b1b1);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    user-select: none;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*karty*/
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 12px;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+    perspective: 1000px;/*nevim co dela ale typek na stack overflow poradil a ted to jede*/
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-back {
+    visibility: hidden;
+}
+
+.card.flip .card-back {
+    visibility: visible;
+    backface-visibility: hidden;
+    animation: scaleUp 0.125s forwards;
+    transform-origin: center;
+}
+
+.card.flip-back .card-back {
+    animation: scaleDown 0.075s forwards;
+}
+
+@keyframes scaleUp {
+    0% {transform: scale(0.01);}
+    40% {transform: scale(0.5);}
+    90% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+@keyframes scaleDown {
+    0% {transform: scale(1);}
+    60% {transform: scale(0.5);}
+    100% {transform: scale(0);}
+}
+/*logo*/
+.header-image {
+    width: 30%; /* Make the image full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves like a block element */
+    margin: 0 auto; /* Center the image */
+    position: relative; /* Ensure it stays at the top */
+    z-index: 10; /* Make sure it appears above other elements */
+    margin-bottom: 20px;
+}
+
+/*buttony*/
+.shop-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.shop-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #636363;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+    background-color: #444444;
+}
+
+.locked{
+    opacity : 0.5;
+    pointer-events: none;
+}
+
+/*abilitky*/
+.stock-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.explosion-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: explode 0.7s ease-out forwards;
+}
+
+.crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.crosshair-animate {
+    animation: crosshair-grow 1.5s forwards;
+}
+
+@keyframes crosshair-grow {
+    0% {
+        width: 10%;
+        height: 10%;
+        opacity: 0.5;
+    }
+    50% {
+        width: 80%;
+        height: 80%;
+        opacity: 1;
+    }
+    70% { 
+        opacity: 0; 
+        width: 80%;
+        height: 80%;}
+    80% { 
+        opacity: 1; 
+        width: 80%;
+        height: 80%;}
+    90% { 
+        opacity: 0; 
+        width: 85%;
+        height: 85%;}
+    100% { 
+        opacity: 1;
+        width: 90%;
+        height: 90%; }
+}
+
+@keyframes crosshair-flash {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0; }
+    60% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* stats*/
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.player-text {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.score-text {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+.current-player {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f8f9;
+    transition: background-color 0.3s;
+}
+
+.current-player.player1-border {
+    border: 2px solid #7A30FF;
+    background-color: rgba(120, 48, 255, 0.212);
+}
+
+.current-player.player2-border {
+    border: 2px solid #FFF530;
+    background-color: rgba(255, 245, 48, 0.37);
+}
